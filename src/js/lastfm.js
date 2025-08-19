@@ -21,14 +21,12 @@ function fetchCurrentTrack() {
                     document.getElementById('artist-name').innerText = currentTrack.artist['#text'];
                     document.getElementById('album-cover').src = currentTrack.image[3]['#text'];
                     
-                    // Создаем ссылку на трек (используем поиск YouTube)
                     const trackQuery = encodeURIComponent(`${currentTrack.name} ${currentTrack.artist['#text']}`);
                     const trackLink = `https://www.youtube.com/results?search_query=${trackQuery}`;
                     
-                    // Обновляем элемент с ссылкой
                     const trackLinkElement = document.getElementById('track-link');
                     trackLinkElement.href = trackLink;
-                    trackLinkElement.innerText = 'Слушать на YouTube';
+                    trackLinkElement.innerText = 'Watch on YouTube';
                 }
             } else {
                 document.getElementById('album-title').innerText = 'No data';
