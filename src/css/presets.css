@@ -1,0 +1,26 @@
+
+.avg-block {
+    background-color:   var(--bg);
+    padding:            10px;
+    border:             2px var(--border-color);
+    border-radius:      5px;
+    color:              var(--fg);
+}
+
+.mgtop {
+    margin-top: 10px;
+}
+
+.mgleft {
+    margin-left: 10px;
+}
+
+.fixheight {
+    height: 100px;
+}
+
+.smallimg {
+    border-radius: 3px;
+    height: 100px;
+    width:  100px;
+}

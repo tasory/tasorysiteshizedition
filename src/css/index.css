@@ -1,0 +1,74 @@
+
+body {
+    position: relative;
+    margin: 0;
+    overflow-x: hidden;  /* Убираем горизонтальный скролл */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    top: -10px;
+    left: -10px;
+    background-image: url('/src/img/neko.gif');
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.topbar {
+    display: flex;
+    height: 30px;
+    background-color: var(--bg);
+    color: var(--fg);
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+}
+
+.infotext {
+    margin-top: 0px;
+}
+
+.widgets {
+    display: flex;
+    flex-direction: row;
+}
+
+.musicpl-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.album-artist {
+    display: flex;
+    margin-top: -10px;
+    flex-direction: row;
+}
+
+.album-artist > p {
+    margin-right: 4px;
+}
+
+.music {
+    display: flex;
+    flex-direction: row;
+}
+
+.avatar {
+    margin-right: 10px;
+}
+
+.shortaboutme {
+    margin-top: 0px;
+    font-weight: bold;
+}
