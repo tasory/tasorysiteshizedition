@@ -25,9 +25,7 @@ function fetchCurrentTrack() {
                     const trackLink = `https://www.youtube.com/results?search_query=${trackQuery}`;
                     
                     const trackLinkElement = document.getElementById('track-link');
-                    trackLinkElement.href = trackLink;
-                    trackLinkElement.innerText = 'Watch on YouTube';
-                }
+                    trackLinkElement.href = trackLink;                }
             } else {
                 document.getElementById('album-title').innerText = 'No data';
                 document.getElementById('track-title').innerText = '';
